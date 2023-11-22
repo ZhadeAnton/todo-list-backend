@@ -5,4 +5,9 @@ const router = Router()
 
 router.use(logTimeNow)
 
+router.get('/', (req, res) => {
+    res.json({ message: 'hello!'})
+})
+
+
 export default router
